@@ -68,7 +68,9 @@ function getMenuData(item) {
 }
 
 app.post('/menus', async (req, res) => {
-  
+  res.status(201).json({
+    'message': 'Menu criado com sucesso'
+  });
 });
 
 app.listen(PORT, () => {
